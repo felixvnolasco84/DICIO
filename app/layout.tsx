@@ -6,6 +6,7 @@ import { fontSans } from "@/lib/fonts";
 import { SiteHeader } from "@/components/Header/SiteHeader";
 import { TailwindIndicator } from "@/components/Tailwind/TailwindIndicator";
 import { ThemeProvider } from "@/components/Theme/ThemeProvider";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,12 @@ export default function RootLayout({
   return (
     <>
       <html lang="es" suppressHydrationWarning>
-        <head />
+        <head>
+          {/* <Script
+            src="/lib/orb.js"
+            strategy="beforeInteractive"
+          /> */}
+        </head>
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
