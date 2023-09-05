@@ -3,7 +3,17 @@ import Slider from "@/components/Slider/Slider";
 import React from "react";
 
 export default function Productos() {
-  const items = [{ title: "Item 1" }, { title: "Item 2" }, { title: "Item 3" }];
+  const items = [
+    {
+      title: "OCR",
+      description:
+        "Nuestro módulo de reconocimiento de caracteres reconoce, extrae y procesa el texto de tus documentos con hasta un 98% de efectividad.",
+    },
+    { title: "Item 2", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus beatae voluptas cumque autem saepe." },
+    { title: "Item 3", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus beatae voluptas cumque autem saepe." },
+  ];
+
+  
   const components: { title: string; image: string; description: string }[] = [
     {
       image: "/images/alert-dialog.svg",
@@ -24,6 +34,9 @@ export default function Productos() {
         "Ponemos a tu alcance soluciones totalmente seguras de Identidad Digital con Biometría, IA y Blockchain. Con certificaciones de nivel internacional y soporte personalizado uno a uno.",
     },
   ];
+
+
+  
 
   return (
     <>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import './Slider.css';
+import Slide from './Slide';
 
 const Slider = ({ items }: any) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,7 +19,7 @@ const Slider = ({ items }: any) => {
             key={index}
             className={`slide ${currentIndex === index ? "active" : ""}`}
           >
-            <h2>{item.title}</h2>
+            <Slide title={item.title} description={item.description}/>
           </div>
         ))}
       </div>
