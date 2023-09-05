@@ -1,0 +1,57 @@
+/* components/Slider.module.css */
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slider-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust the height as needed */
+  }
+  
+  .slides-container {
+    display: flex;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .bullet-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 0.5rem;
+    border: 2px solid #0070f3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .bullet.active {
+    background-color: #0070f3;
+  }
+  

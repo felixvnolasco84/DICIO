@@ -58,7 +58,7 @@ export function Navigation() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Productos</NavigationMenuTrigger>
+          {/* <NavigationMenuTrigger>Productos</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -88,7 +88,12 @@ export function Navigation() {
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
             </ul>
-          </NavigationMenuContent>
+          </NavigationMenuContent> */}
+          <Link href="/productos" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Productos
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/clientes" legacyBehavior passHref>
