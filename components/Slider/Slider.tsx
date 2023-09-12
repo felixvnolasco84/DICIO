@@ -19,7 +19,7 @@ const Slider = ({ items }: any) => {
             key={index}
             className={`slide ${currentIndex === index ? "active" : ""}`}
           >
-            <Slide title={item.title} description={item.description}/>
+            <Slide title={item.title} description={item.description} buttons={item.buttons} path={item.path}/>
           </div>
         ))}
       </div>

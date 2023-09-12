@@ -1,19 +1,102 @@
+"use client"
+
+
 import Card from "@/components/Card/Card";
 import Slider from "@/components/Slider/Slider";
 import React from "react";
 
+export const products = [
+  {
+    title: "OCR",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores labore, nam quas laborum tenetur hic.",
+    disclaimer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+    qrImage: "/images/qr.svg",
+    qrText:
+      "Escanea el código para vivir la experiencia en tu dispositivo móvil.",
+    buttons: [
+      {
+        title: "Sube una imagen",
+        variant: "default",
+        size: "sm",
+        onClick: () => console.log("clicked"),
+        path: "/",
+      },
+    ],
+  },
+];
+
 export default function Productos() {
+
   const items = [
     {
       title: "OCR",
       description:
         "Nuestro módulo de reconocimiento de caracteres reconoce, extrae y procesa el texto de tus documentos con hasta un 98% de efectividad.",
+      buttons: [
+        {
+          title: "Prueba nuestro OCR",
+          variant: "default",
+          size: "sm",
+          onClick: () => console.log("clicked"),          
+          path: "/productos/OCR"
+        },
+        {
+          title: "Video demo",
+          variant: "outline",
+          size: "sm",
+          onClick: () => console.log("clicked"),
+          className: "text-[#6D7278]",
+          path: "/productos"
+        },
+        {
+          title: "Video comercial",
+          variant: "outline",
+          size: "sm",
+          onClick: () => console.log("clicked"),
+          className: "text-[#6D7278]",
+          path: "/productos"
+        },
+      ],
     },
-    { title: "Item 2", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus beatae voluptas cumque autem saepe." },
-    { title: "Item 3", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus beatae voluptas cumque autem saepe." },
+    {
+      title: "Comparación facial",
+      description:
+        "Nuestro motor de reconocimiento facial captura, analiza y compara el rostro de un usuario en dos dimensiones: 1 a 1, cotejando dos fotografías del mismo individuo, o 1 a N, contrastando una imagen con múltiples fotografías de usuarios en milisegundos.",
+      buttons: [
+        {
+          title: "Haz una prueba",
+          variant: "default",
+          size: "sm",
+          onClick: () => console.log("clicked"),    
+          path: "/productos/comparacion-facial"
+        },
+        {
+          title: "Video demo",
+          variant: "outline",
+          size: "sm",
+          onClick: () => console.log("clicked"),
+          className: "text-[#6D7278]",
+          path: "/productos"
+        },
+        {
+          title: "Video comercial",
+          variant: "outline",
+          size: "sm",
+          onClick: () => console.log("clicked"),
+          className: "text-[#6D7278]",
+          path: "/productos"
+        },
+      ],        
+    },
+    {
+      title: "Item 3",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus beatae voluptas cumque autem saepe.",
+    },
   ];
 
-  
   const components: { title: string; image: string; description: string }[] = [
     {
       image: "/images/alert-dialog.svg",
@@ -34,9 +117,6 @@ export default function Productos() {
         "Ponemos a tu alcance soluciones totalmente seguras de Identidad Digital con Biometría, IA y Blockchain. Con certificaciones de nivel internacional y soporte personalizado uno a uno.",
     },
   ];
-
-
-  
 
   return (
     <>

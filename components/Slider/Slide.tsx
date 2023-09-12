@@ -1,12 +1,19 @@
+"use client";
+
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function Slide({
   title,
   description,
+  buttons,
+  path,
 }: {
   title: string;
   description: string;
+  buttons: any[];
+  path: string;
 }) {
   return (
     <div className="flex flex-col gap-[45px]">
@@ -34,29 +41,19 @@ export default function Slide({
         </div>
 
         <div className="group flex gap-[10px]">
-          <Button
-            variant="default"
-            size="sm"
-            onClick={() => console.log("clicked")}
-          >
-            Prueba nuestro OCR
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => console.log("clicked")}
-            className="text-[#6D7278]"
-          >
-            Video demo
-          </Button>          
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => console.log("clicked")}
-            className="text-[#6D7278]"
-          >
-            Video comercial
-          </Button>          
+          {/* <Link href={path}> */}
+            {buttons?.map((button, index) => (
+              <Button
+                key={index}
+                variant={button.variant}
+                size={button.size}
+                onClick={button.onClick}
+                className={button.className}
+              >
+                {button.title}
+              </Button>
+            ))}
+          {/* </Link> */}
         </div>
       </div>
     </div>
