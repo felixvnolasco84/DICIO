@@ -2,8 +2,8 @@
 "use client"
 
 import React from 'react'
-import { products } from '../page';
 import Image from 'next/image';
+import { products } from '@/lib/utils';
 
 export default  function page({ params }: any) {
 
