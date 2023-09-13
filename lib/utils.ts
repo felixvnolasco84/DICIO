@@ -11,10 +11,10 @@ export const products = [
   {
     title: "OCR",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores labore, nam quas laborum tenetur hic.",
+      "Utiliza esta DEMO para extraer los datos de tus identificaciones, aquí puedes subir tu INE o pasaporte.",
     disclaimer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    qrImage: "/images/qr.svg",
+      "*Formato: Imagen .jpg, .png 900x1500 max.",
+    qrImage: "/lib/images/qr-code-svgrepo-com",
     qrText:
       "Escanea el código para vivir la experiencia en tu dispositivo móvil.",
     buttons: [
